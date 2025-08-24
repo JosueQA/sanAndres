@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lobster&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Blanquotey';
+  src: url('../src/assets/fonts/Blanquotey.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h4,
+button {
+  @apply font-tittle;
+}
+
+h1{
+  @apply text-7xl text-sanAndresBg
+}
+
+h2{
+  @apply text-3xl text-sanAndresBg
+}
+
+h3{
+  @apply font-montserrat font-semibold
+}
+
+h4 {
+  @apply text-xl text-sanAndresBg
+}
+
+p {
+  @apply text-sm font-semibold font-montserrat
+}
+
+#bridge span:last-child{
+  display: none;
+}
+
+footer span h2, footer span h4 {
+  color: white !important;
+}

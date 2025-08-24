@@ -1,0 +1,36 @@
+.processActivado {
+  border-radius: 25px;
+  background-color: #3baffb;
+  @apply duration-700;
+}
+
+.processActivado h2 {
+  color: white;
+}
+
+.processActivado::before {
+  content: "";
+  position: absolute;
+  top: 1.75rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @apply duration-700;
+}
+
+.processActivadoIzquierda::before {
+  border-width: 0.75rem 1rem 0.75rem 0;
+  border-color: transparent #3baffb transparent transparent;
+  left: -1rem;
+}
+
+.processActivadoDerecha::before {
+  border-width: 0.75rem 0 0.75rem 1rem;
+  border-color: transparent transparent transparent #3baffb;
+  right: -1rem;
+}
+
+.processImageActivado {
+  filter: grayscale(100%);
+  @apply duration-700;
+}
